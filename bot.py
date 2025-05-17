@@ -44,7 +44,7 @@ U = '\x1b[1;37m'
 
 url='https://edson1.glitch.me/'
 
-num = 100
+num = 50
 good = 0
 gg = 0
 bb = 0
@@ -93,6 +93,7 @@ def send_httpx():
             response = client.get(url, headers=headers)
             if response.status_code == 200:
                 good += 1
+                print('Good')
             else:
                 gg += 1
     except:
